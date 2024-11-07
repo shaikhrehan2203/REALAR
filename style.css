@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+.font {
+    font-family: "Train One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.741);
+}
+
+.font-1{
+  font-family: "Train One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.nav-1 ul li a {
+
+    font-size:14px;
+    color: white;
+}
+
+.nav-1 ul li a:hover {
+
+    color:  rgb(193, 163, 98);
+    transition: .5s linear  ;
+
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: black;
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color:  rgb(193, 163, 98);
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    padding: 12px 24px;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+  
+  .home-box {
+
+    mask-image: url(about-1-mask.png);
+    mask-size: 100% 100%;
+    animation: image-anime 15s linear infinite ;
+    /* height: 100vh; */
+    background-position: center;
+    background-size: cover;
+
+  }
+
+
+  
+
+  /* bg changer */
+
+  @keyframes image-anime {
+
+    0%{
+      background-image: url(hero_bg_1_1.png);
+      
+      
+    }
+    25%{
+      background-image: url(hero_bg_1_1.png);
+     
+    }
+    30%{
+      background-image: url(hero_bg_1_2.png);
+   
+    }
+    55%{
+      background-image: url(hero_bg_1_2.png);
+    ;
+    }
+    60%{
+      background-image: url(hero_bg_1_3.png);
+    
+    }
+    95%{
+      background-image: url(hero_bg_1_3.png);
+   
+    }
+    100%{
+      background-image: url(hero_bg_1_1.png);
+      
+    }
+
+  }
+
+  .left{
+   overflow: hidden;
+   height: 100vh;
+  }
+  .left h1 {
+
+    color: white;
+    animation: text-anime 15s linear infinite;
+    transform: translateY(-100%);
+    font-size: 70px;
+    position: absolute;
+    overflow: hidden;
+    top: 20%;
+    transform: translateY(-200%);
+  }
+
+  .lefth2{
+      animation-delay: 4.5s !important;
+  }
+  .lefth3{
+      animation-delay: 9s !important;
+  }
+
+  @media only screen and (max-width: 620px){
+    .left h1{
+      top: 0;
+    }
+
+    .play{
+      top: 0 !important;
+    }
+    .right{
+      height: 300px !important;
+    }
+  }
+
+  @keyframes text-anime {
+    0%{
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    20%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    24%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    28%{
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+
+
+
+.left p {
+  color: white;
+  font-size: 17px;
+  animation: p-anime 15s linear infinite;
+  /* transform: translateY(34%); */
+  /* top: 80%; */
+      transform: translateY(150%);
+      bottom: 30px;
+  position: absolute;
+
+}
+.leftp2{
+  animation-delay: 4.5s !important;
+}
+.leftp3{
+  animation-delay: 9s !important;
+}
+
+
+@keyframes p-anime {
+  0% {
+      transform: translateY(90%);
+      opacity: 0;
+  }
+
+  20% {
+      transform: translateY(0%);
+      opacity: 1;
+  }
+
+  24% {
+      transform: translateY(0%);
+      opacity: 1;
+  }
+
+  28% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+}
+/* 
+.fi {
+  background-image: url(btn-shape.png);
+  background-size: 100%;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #1c2d3700;
+} */
+
+
+.play {
+  width: 130px;
+  height: 130px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.315);
+  position: absolute;
+  top: 250px;
+
+}
+
+.right{
+  height: 30vh;
+}
+
+.play-anime {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: play-anime 3s linear infinite;
+
+}
+
+.play-anime:nth-child(2) {
+  animation-delay: 1.5s;
+
+}
+
+@keyframes play-anime {
+  0% {
+      scale: 1;
+      opacity: 1;
+
+  }
+
+  100% {
+      scale: 1.7;
+      opacity: 0;
+  }
+}
+
+.first-bt {
+  background-color: #EED26E;
+  padding: 16px 25px;
+  border-radius: 5px 20px 5px 5px;
+  border: none;
+}
+
+.first-bt:hover {
+  border-radius: 30px;
+}
+
+.second-write {
+  color: white;
+}
+
+.second-box img {
+  transition: .2s linear;
+  transform: scaleX(1);
+}
+
+.second-box:hover img {
+  transform: scaleX(-1);
+  transition: .2s linear;
+}
+.abt-img {
+  position: relative;
+  mask-image: url(about-1-mask.png);
+  mask-size: 100% 100%;
+  overflow: hidden;
+}
+
+.abt-img::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: .5s linear;
+  top: 0;
+  left: -100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(140deg, rgba(0,0,0,0) 31%, rgba(255, 255, 255, 0.393) 51%, rgba(0,0,0,0) 55%);
+}
+
+.abt-img:hover:before{
+  left: 100%;
+  transition: .5s linear;
+}
+
+.therd-box::after{
+  content: "";
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(140deg, rgba(0,0,0,0) 31%, rgba(255, 255, 255, 0.399) 51%, rgba(0,0,0,0) 55%);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  z-index: 1111;
+}
+
+.therd-box:hover::after{
+  left: 100%;
+  transition: .4s linear;
+}
+
+.therd-write {
+  color: white;
+  /* animation: p-anime 15s linear infinite; */
+  /* transform: translateY(34%); */
+  top: 10%;
+  position: absolute;
+  font-family: outfit;
+  color: transparent;
+  bottom: 45%;
+  -webkit-text-fill-color: transparent;
+  font-size: 9vw;
+  /* opacity: 50%; */
+  -webkit-text-stroke: 1px rgba(214, 213, 208, 0.598);
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.therd-section {
+  position: relative;
+ background-image: url(hero_bg_1_3.png);
+  background-size: cover; 
+ background-attachment: fixed;
+ /* height:80vh; */
+ width: 100%;
+
+}
+ 
+
+
+.therd-section::before{
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+
+}
+
+.parent-div{
+  height: auto;
+  animation: image-slideanime 12s linear infinite;
+  /* mask-image: url(img/project-card1-img-mask.png); */
+  mask-size: 100% 100%;
+  /* position: relative !important; */
+  /* z-index: 111; */
+  
+}
+.img-hover img{
+  width: 100% !important;
+}
+
+/* .img-hover{
+  position: relative;
+  mask-image: url(project-card1-img-mask.png);
+} */
+
+/* .parent-div:before{
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 90%;
+   left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: rgba(12, 46, 71, 0.606);
+  background-image: url(img/project_shape1_1.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  mask-image: url(img/project-card1-img-mask.png);
+  transition: .3s linear;
+  mask-size: 100% 100%;
+}
+.parent-div:hover::before{
+  opacity: 1;
+  transition: .3s linear;
+}
+
+.parent-div::after {
+  content: '';
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(140deg, rgba(0,0,0,0.006214985994397737) 30%, rgba(254,254,254,0.6084558823529411) 50%, rgba(255,255,255,0.02302170868347342) 70%);
+  width: 100%;
+  height: 100%;
+   animation: image-slideanime 12s linear infinite; 
+  mask-image: url(project-card1-img-mask.png);
+  mask-size: 100% 100%;
+  top: 0;
+  left: -100%; 
+}
+.parent-div:hover::after{
+  left: 100%;
+  transition: .3s linear;
+}  */
+
+@keyframes image-slideanime{
+  0%{
+      transform: translateX(0);
+  }
+  20%{
+      transform: translateX(0);
+  }
+
+  25%{
+      transform: translateX(-100%);
+  }
+  45%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-200%);
+  }
+  70%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-300%);
+  }
+  95%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+.bg-sec {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+}
+
+.img-2 {
+
+  background-image: url(team_1_1.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+}
+
+.img-3 {
+
+  background-image: url(team_1_2.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+}
+.img-0 {
+
+  background-image: url(team_1_3.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+}
+
+.main-div-1{
+  transition: .2s linear;
+  height: 20%;
+}
+.img-card:hover .main-div-1{
+
+  background-color:  rgba(0, 0, 0, 0.507);
+  height: 90%;
+  transition: .2s linear;
+
+}
+
+
+.first-bt-1 {
+  background-color: #EED26E;
+  padding: 16px 15px;
+  border-radius: 5px 20px 5px 5px;
+  border: none;
+}
+
+.first-bt-1:hover {
+  border-radius: 30px;
+}
+
+.img-4{
+  
+  animation: image-up-down 12s linear infinite;
+
+}
+
+@keyframes image-up-down {
+
+  0%{
+    transform: translateY(0%);
+  }
+
+  
+  25%{
+    transform: translateY(15%);
+  }
+
+  50%{
+    transform: translateY(25%);
+  }
+
+  75%{
+    transform: translateY(15%);
+  }
+
+  100%{
+    transform: translateY(0%);
+  }
+  
+
+}
+
+
+.bg-img {
+  position: relative;
+ background-image: url(download-bg-1-1.png);
+  background-size: cover; 
+ background-attachment: fixed;
+}
+ 
+
+
+.bg-img::before{
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+
+}
+
+.img-6{
+  mask-image: url(blog-card1-img-mask.png);
+  mask-size: 100% 100%;
+  overflow: hidden;
+}
+
+.input-div {
+
+  background-color: transparent;
+  padding: 13px 22px;
+  color: black;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 10px 25px 10px 10px;
+
+}
+
+
+.first-bt-2 {
+  background-color: #EED26E;
+  padding: 10px 15px;
+  border: none;
+
+  border-radius: 6px;
+}
+
+.hover-div:hover  {
+
+color: white;
+transform: .5s ;
+
+}
